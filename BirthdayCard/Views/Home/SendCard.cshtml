@@ -1,0 +1,27 @@
+﻿@model BdayCard
+
+<h2>Birthday Card Sent</h2>
+
+<div class="form-group" style="display: flex; flex-direction: row; justify-content: left; align-items: center;">
+    <label asp-for="From" class="col-md-2 control-label"></label>
+    <div class="col-md-5">
+        <span>@Model.From</span>
+    </div>
+</div>
+
+<div class="form-group" style="display: flex; flex-direction: row; justify-content: left; align-items: center;">
+    <label asp-for="To" class="col-md-2 control-label"></label>
+    <div class="col-md-5">
+        <span>@Model.To</span>
+    </div>
+</div>
+
+<div class="form-group" style="display: flex; flex-direction: row; justify-content: left; align-items: center;">
+    <label asp-for="Msg" class="col-md-2 control-label"></label>
+    <div class="col-md-5">
+        <span >@Model.Msg</span>
+    </div>
+</div>
+
+
+

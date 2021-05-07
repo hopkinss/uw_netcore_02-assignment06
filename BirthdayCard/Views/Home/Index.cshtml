@@ -1,0 +1,34 @@
+﻿@model BdayCard
+
+
+<form asp-action="Index" method="post" role="form">
+    <h4>Send a Birthday Card</h4>
+    @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+
+    <div class="form-group" style="display: flex; flex-direction: row; justify-content: left; align-items: center;">
+        <label asp-for="From" class="col-md-2 control-label"></label>
+        <div class="col-md-5">
+            <input asp-for="From" class="form-control" />
+        </div>
+    </div>
+
+    <div class="form-group" style="display: flex; flex-direction: row; justify-content: left; align-items: center;">
+        <label asp-for="To" class="col-md-2 control-label"></label>
+        <div class="col-md-5">
+            <input asp-for="To" class="form-control" />
+        </div>
+    </div>
+
+    <div class="form-group" style="display: flex; flex-direction: row; justify-content: left; align-items: center;">
+        <label asp-for="Msg" class="col-md-2 control-label"></label>
+        <div class="col-md-5">
+            <input asp-for="Msg" class="form-control" />
+
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-5">
+            <input type="submit" class="btn btn-primary" value="Send Card" />
+        </div>
+    </div>
+</form>
